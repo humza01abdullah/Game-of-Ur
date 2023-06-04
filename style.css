@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 1%;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+.header {
+  background-color: lightslategray;
+  font-size: 30px;
+  text-align: center;
+}
+
+.game-space {
+  display: flex;
+}
+
+/*** PLAYER SPACE ***/
+
+.hidden {
+  /* //BUG adding hidden shifts spacing for ".dice" */
+  display: none;
+}
+
+/* Blue Player */
+
+.blue-side {
+  background-color: lightgrey;
+  /* //TODO make player side flash when swaps to their turn */
+  flex-grow: 1;
+  text-align: center;
+}
+
+.blue-side h2 {
+  background-color: lightblue;
+  text-align: center;
+}
+
+.blue-score div {
+  padding: 3%;
+}
+
+/* Red Player */
+
+.red-side {
+  background-color: lightgrey;
+  /* //TODO make player side flash when swaps to their turn */
+  flex-grow: 1;
+  text-align: center;
+}
+
+.red-side h2 {
+  background-color: lightcoral;
+  text-align: center;
+}
+
+.red-score div {
+  padding: 3%;
+}
+
+/* Players Dice */
+
+.dice {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.dice button {
+  font-size: 30px;
+  padding: 3%;
+}
+
+.dice h3 {
+  font-size: 50px;
+  padding: 5%;
+}
+
+/*** BOARD SPACE ***/
+
+.centre {
+  background-color: lightgreen;
+  flex-grow: 1;
+}
+
+.grid-container {
+  /* //BUG adding text shifts spacing for "div" */
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.rosette {
+  background-color: rgb(90, 255, 50);
+}
+
+.grid-container div {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}

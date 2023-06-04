@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/android-chrome-512x512.png" />
+    <!-- //TODO change icon to 🏵️ -->
+    <title>Game of Ur</title>
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+
+    <div class="header">
+      <h1 class="title">Game of Ur</h1>
+    </div>
+
+    <div class="game-space">
+      <div class="blue-side">
+        <h2>Blue Player</h2>
+        <h3 class="blue-status">Your Turn</h3>
+        <div class="blue-score">
+          <div>
+            <h3>Pieces waiting:</h3>
+            <h3 class="blue-waiting">7</h3>
+          </div>
+          <div>
+            <h3>Pieces racing:</h3>
+            <h3 class="blue-racing">0</h3>
+          </div>
+          <div>
+            <h3>Pieces finished:</h3>
+            <h3 class="blue-finshed">0</h3>
+          </div>
+        </div>
+        <div class="dice">
+          <h3 id="blue-dice-roll">0 0 0 0</h3>
+          <!-- //NOTE dice value displayed is an "id" instead of "class" -->
+          <button class="blue-dice">Roll</button>
+        </div>
+      </div>
+
+      <div class="centre">
+        <div class="grid-container">
+          <div class="blue-4 rosette">🏵️ →</div>
+          <div class="mid-5">↓</div>
+          <div class="red-4 rosette">← 🏵️</div>
+          <div class="blue-3">↑</div>
+          <div class="mid-6">↓</div>
+          <div class="red-3">↑</div>
+          <div class="blue-2">↑</div>
+          <div class="mid-7">↓</div>
+          <div class="red-2">↑</div>
+          <div class="blue-1">↑</div>
+          <div class="mid-8 rosette">🏵️</div>
+          <div class="red-1">↑</div>
+          <div class="blue-start">🔵</div>
+          <div class="mid9">↓</div>
+          <div class="red-start">🔴</div>
+          <div class="blue-end">🏁</div>
+          <div class="mid-10">↓</div>
+          <div class="red-end">🏁</div>
+          <div class="blue-14 rosette">🏵️</div>
+          <div class="mid-11">↓</div>
+          <div class="red-14 rosette">🏵️</div>
+          <div class="blue-13">↑</div>
+          <div class="mid-12">←→</div>
+          <div class="red-13">↑</div>
+        </div>
+      </div>
+
+      <div class="red-side">
+        <h2>Red Player</h2>
+        <h3 class="red-status">Waiting...</h3>
+        <div class="red-score">
+          <div>
+            <h3>Pieces waiting:</h3>
+            <h3 class="red-waiting">7</h3>
+          </div>
+          <div>
+            <h3>Pieces racing:</h3>
+            <h3 class="red-racing">0</h3>
+          </div>
+          <div>
+            <h3>Pieces finished:</h3>
+            <h3 class="red-finshed">0</h3>
+          </div>
+        </div>
+        <div class="dice hidden">
+          <h3 id="red-dice-roll">0 0 0 0</h3>
+          <!-- //NOTE dice value displayed is an "id" instead of "class" -->
+          <button class="red-dice">Roll</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
